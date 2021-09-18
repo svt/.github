@@ -9,11 +9,11 @@ We also aim to be more transparent in general - for example, we have released th
 
 ### Using SVT's Open Source Projects 🏄 
 
-See the README and documentation for the project you wish to use.
+See the README and the documentation for the project you wish to use.
 
 ### Contributing to SVT's Open Source projects 🙌
 
-Contributing to an SVT-project is easy for anyone used to open source, as it follows the regular GitHub flow.
+Contributing to a SVT-project is easy for anyone used to open source, as it follows the regular GitHub flow.
 If you are new to all this, look at the [GitHub Open Source Guide](https://opensource.guide/) and you should be all set!
 
 Basically - fork the repository and follow the code guidelines and best practices for that project. 
