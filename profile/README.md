@@ -10,12 +10,11 @@ We also aim to be more transparent in general - for example, we have released th
 ### Using SVT's Open Source Projects 🏄 
 
 See the README and documentation for the project you wish to use.
-Note, that we use a lot of diffent open source licenses, but in most cases, we try to release a project in what we percive is the most common in that products open source eco system.
 
 ### Contributing to SVT's Open Source projects 🙌
 
 Contributing to an SVT-project is easy for anyone used to open source, as it follows the regular GitHub flow.
-If you are new to all this, look at [GitHub's Open Source Guide](https://opensource.guide/) and you should be all set!
+If you are new to all this, look at the [GitHub Open Source Guide](https://opensource.guide/) and you should be all set!
 
 Basically - fork the repository and follow the code guidelines and best practices for that project. 
 Make your changes and send a pull request on GitHub! 
