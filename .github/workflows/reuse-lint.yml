@@ -1,0 +1,33 @@
+name: REUSE compliance check
+
+on:
+  repository_dispatch:
+    types: [org-workflow-bot]  
+   
+jobs:
+  register:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: SvanBoxel/organization-workflow@main
+      with:
+        id: ${{ github.event.client_payload.id }}
+        callback_url: ${{ github.event.client_payload.callback_url }}
+        sha: ${{ github.event.client_payload.sha }}
+        run_id: ${{ github.run_id }}
+        name: ${{ github.workflow }}
+        enforce: false
+        enforce-admin: false
+        documentation: ".github/workflows/reuse-lint-info.md"
+
+  main:
+    needs: [register]
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        repository: ${{ github.event.client_payload.repository.full_name }}
+        ref: ${{ github.event.client_payload.sha }}
+        token: ${{ github.event.client_payload.token }}
+    - name: REUSE Compliance Check
+      uses: fsfe/reuse-action@v1
